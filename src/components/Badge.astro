@@ -1,0 +1,29 @@
+---
+// Supports weights 100-900
+import '@fontsource-variable/imbue';
+
+interface Props {
+  name: string;
+  filename: string;
+}
+
+const { name, filename } = Astro.props;
+---
+
+<div class=`flex flex-col items-center justify-center space-y-4 px-4 py-20`>
+  <h2
+    class="rounded-2xl border border-neutral-700 bg-neutral-800 px-4 py-2 font-imbue text-3xl font-thin text-white"
+  >
+    {name}
+  </h2>
+  <img
+    src=`https://cristhgunners.github.io/NBadges/badges/${filename}.svg`
+    alt={name}
+    class="mx-auto block w-full max-w-sm"
+  />
+  <a
+    href=`https://cristhgunners.github.io/NBadges/badges/${filename}.svg`
+    class=`font-imbue text-2xl font-thin text-white hover:text-neutral-200`
+    download>Download</a
+  >
+</div>

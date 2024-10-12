@@ -1,0 +1,39 @@
+---
+// Supports weights 100-900
+import '@fontsource-variable/imbue';
+
+interface Props {}
+
+const {} = Astro.props;
+---
+
+<footer class="flex flex-col items-center justify-center space-y-2 py-4">
+  <p class="block text-center font-imbue text-xl font-normal text-white">
+    This work is licensed under <a
+      href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+      target="_blank"
+      rel="license noopener noreferrer"
+      style="display:inline-block;"
+      class="hover:text-neutral-400"
+      >Attribution 4.0 International<img
+        style="height:22px!important;margin-left:3px;vertical-align:middle;display:inline-block;"
+        alt="CC"
+        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+      /><img
+        style="height:22px!important;margin-left:3px;vertical-align:middle;display:inline-block;"
+        alt="By"
+        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+      /></a
+    >
+  </p>
+  <span class="block font-imbue text-xl font-normal text-white"
+    >{new Date().getFullYear()}</span
+  >
+  <a
+    href="https://www.cristhgunners.com/"
+    rel="noopener"
+    target="_blank"
+    class="block font-imbue text-xl font-normal text-white hover:text-neutral-200"
+    >CristhGunners</a
+  >
+</footer>
